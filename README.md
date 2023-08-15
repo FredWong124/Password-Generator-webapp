@@ -37,7 +37,7 @@ http://fredwongpwgen.sytes.net/
     scp -i /path/to/your/key.pem your_html_file.htmlec2-user@ec2-instance-ip:/var/www/html/
     scp -i /path/to/your/key.pem your_css_file.cssec2-user@ec2-instance-ip:/var/www/html/
 
-       or mkdir a new html and css file then copy and paste the code via 
+       or mkdir a new html and css file then copy and paste the code  
        
     7. run the command to make sure apache have right to access the html and css file
        sudo chown apache:apache /var/www/htmlyour_html_file.html
