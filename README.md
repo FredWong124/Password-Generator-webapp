@@ -4,7 +4,7 @@
 A web version of Simple Password Generator which can generate password randomly by user criteria (input amounts of letters/number/symbols).
 
 ## Demo
-![ ](relative/path/to/your/gif.gif)
+![ ](pwgenwebapp.gif)
 
 
 ## Instruction
