@@ -15,14 +15,14 @@ I have a demo page to let you try out the app which is host on AWS EC2 and have 
 
 
 ## How to deploy it onto AWS EC2
-    1. Create a AWS account 
-    2. Create a EC2 instance with AWS linux 2 image
-    3. Config the security group(inbound rules) to allow ssh(ports 22) , http(ports 80) , https(ports 443)
-    3. Install apache web server
+1. Create a AWS account 
+2. Create a EC2 instance with AWS linux 2 image
+3. Config the security group(inbound rules) to allow ssh(ports 22) , http(ports 80) , https(ports 443)
+4. Install apache web server
          `sudo yum install httpd`
-    4. Start apache service
+5. Start apache service
          `sudo systemctl start httpd`
-    5. Config the web server
+6. Config the web server
          `sudo nano /etc/httpd/conf/httpd.conf`
        make sure config is like below:  
 
@@ -32,17 +32,17 @@ I have a demo page to let you try out the app which is host on AWS EC2 and have 
        `AllowOverride All`
        `Require all granted`
       ` </Directory>`
-    6. I use `winscp` to send the html file and css file into `/var/www/html`
+7. I use `winscp` to send the html file and css file into `/var/www/html`
 
      or you can `mkdir` a new html and css file then copy and paste the code  
        
-    7. run the command to make sure apache have right to access the html and css file
-       sudo chown apache:apache /var/www/htmlyour_html_file.html
-       sudo chown apache:apache /var/www/html/your_css_file.css
+    8. run the command to make sure apache have right to access the html and css file
+       `sudo chown apache:apache /var/www/htmlyour_html_file.html`
+       `sudo chown apache:apache /var/www/html/your_css_file.css`
 
        if access denined, please `chmod +x <your.html>` to grant the access right 
 
-    8. restart the server to let the server apply the code
+    9. restart the server to let the server apply the code
        `sudo systemctl restart httpd`
-    9. You can access the web app via server public IP
-    10. You can assign a domain via Route 53 / other DNS .
+    10. You can access the web app via server public IP
+    11. You can assign a domain via Route 53 / other DNS .
