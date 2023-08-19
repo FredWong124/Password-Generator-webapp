@@ -28,10 +28,10 @@ I have a demo page to let you try out the app which is host on AWS EC2 and have 
 
        `DocumentRoot "/var/www/html"`
        `<Directory "/var/www/html">`
-      ` Options Indexes FollowSymLinks`
+       `Options Indexes FollowSymLinks`
        `AllowOverride All`
        `Require all granted`
-      ` </Directory>`
+       `</Directory>`
 7. I use `winscp` to send the html file and css file into `/var/www/html`
 
      or you can `mkdir` a new html and css file then copy and paste the code  
