@@ -37,7 +37,9 @@ I have a demo page to let you try out the app which is host on AWS EC2 and have 
      or you can `mkdir` a new html and css file then copy and paste the code  
        
 8. run the command to make sure apache have right to access the html and css file
+   
        `sudo chown apache:apache /var/www/htmlyour_html_file.html`
+   
        `sudo chown apache:apache /var/www/html/your_css_file.css`
 
    if access denined, please `chmod +x <your.html>` to grant the access right 
