@@ -38,11 +38,11 @@ I have a demo page to let you try out the app which is host on AWS EC2 and have 
        
 8. run the command to make sure apache have right to access the html and css file
    
-      `sudo chown apache:apache /var/www/htmlyour_html_file.html`
+      `sudo chown apache:apache /var/www/html/index.html`
    
-      `sudo chown apache:apache /var/www/html/your_css_file.css`
+      `sudo chown apache:apache /var/www/html/style.css`
 
-   if access denined, please `chmod +x <your.html>` to grant the access right 
+   if access denined, please `chmod +x index.html` to grant the access right 
 
  9. restart the server to let the server apply the code
        `sudo systemctl restart httpd`
